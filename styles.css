@@ -30,6 +30,25 @@ body {
     justify-items: center; /* Center the items within the grid cells */
 }
 
+.topWhitebox {
+    background-color: white; /* Changed background color to white */
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: left; /* Align text to the left */
+    grid-column: span 2; /* Span across both columns */
+    color: #333; /* Changed text color to grey */
+    border: none; /* Removed border */
+}
+
+.firstAid {
+    background-color: red; /* Changed background color to red */
+}
+
+.firstAid h3 {
+    text-align: center; /* Center the <h3> in the top left box */
+}
+
 @media (max-width: 600px) {
     body {
         grid-template-columns: 1fr;
