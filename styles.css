@@ -8,6 +8,7 @@ h1 {
     grid-column: span 2;
     border-radius: 10px; /* runde kanter på bakgrunn */
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 section {
@@ -53,7 +54,7 @@ body {
 .topMenu ul li a {
     text-decoration: none;
     color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
 }
 
@@ -75,7 +76,11 @@ body {
     width: 250px; /* Set a fixed width for the menu */
 }
 
-.leftMenu ul {
+.rightMenu {
+    padding-top: 30%; /* Add top padding */
+}
+
+.leftMenu ul, .rightMenu ul {
     list-style-type: none; 
     padding: 0; 
 }
@@ -136,6 +141,7 @@ main {
 .dayPlanning h3,
 .brakeSystem h3 {
     text-align: center; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 @media (max-width: 600px) {
