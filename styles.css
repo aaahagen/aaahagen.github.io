@@ -8,6 +8,7 @@ h1 {
     grid-column: span 2;
     border-radius: 10px; /* runde kanter på bakgrunn */
     text-align: center;
+}
 
 section {
     display: flexbox;
@@ -28,5 +29,11 @@ body {
 }
 
 @media (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+    }
 
+    section {
+        width: 100%;
+    }
 }
