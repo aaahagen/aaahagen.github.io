@@ -118,7 +118,7 @@ main {
 
 .topWhitebox {
     background-color: #d3d3d3; /* Changed background color to light gray */
-    padding: 10px;
+    padding: 10px 15px 0 0;
     margin: 0; 
     border-radius: 20px;
     grid-column: span 2;
