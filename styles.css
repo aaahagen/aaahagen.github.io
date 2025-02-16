@@ -1,6 +1,6 @@
 h1 {
-    color: #f6f1f1;
-    background-color: black;
+    color: #000000;
+    background-color: #d3d3d3;
     width: 60%;
     min-width: 300px;
     padding: 4px;
@@ -92,7 +92,7 @@ main {
 }
 
 .topWhitebox {
-    background-color: rgb(227, 207, 207); 
+    background-color: #d3d3d3; /* Changed background color to light gray */
     padding: 0; 
     border-radius: 10px;
     grid-column: span 2;
