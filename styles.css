@@ -95,6 +95,7 @@ main {
     background-color: rgb(227, 207, 207); 
     padding: 0; 
     border-radius: 10px;
+    grid-column: span 2;
     width: 100%;
     text-align: left; /* Align text to the left */
     grid-column: span 2; /* Span across both columns */
@@ -138,6 +139,19 @@ main {
 .brakeSystem {
     background-color: rgb(97, 78, 17); 
     grid-column: span 1; /* Span one column */
+}
+
+.tips {
+    background-color: white; /* Changed background color to white */
+    grid-column: span 1; /* Span one column */
+    font-size: 12px; /* Smaller font size */
+    color: black; /* Changed font color to black */
+    border: none; /* Removed border */
+}
+
+.tips ul {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0; /* Remove padding */
 }
 
 .firstAid h3,
