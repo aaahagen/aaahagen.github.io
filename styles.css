@@ -56,7 +56,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .topMenu ul li {

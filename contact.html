@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topMenu">
+      <ul>
+        <li><a href="index.html">FORSIDEN</a></li>
+        <li><a href="contact.html">KONTAKT</a></li>
+        <li><a href="notes.html">NOTATER</a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <main>
+        <h4>Kontakt</h4>
+        <form id="contactForm" action="save_message.php" method="post">
+          <label for="name">Navn:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">E-post:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Melding:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

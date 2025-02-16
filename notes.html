@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notater</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function addNote() {
+        const noteText = document.getElementById('noteInput').value;
+        if (noteText.trim() !== '') {
+          const noteContainer = document.getElementById('notesContainer');
+          const noteBox = document.createElement('div');
+          noteBox.className = 'noteBox';
+          noteBox.textContent = noteText;
+          noteContainer.appendChild(noteBox);
+          saveNoteToLocalStorage(noteText);
+          document.getElementById('noteInput').value = '';
+        }
+      }
+
+      function saveNoteToLocalStorage(note) {
+        let notes = localStorage.getItem('notes');
+        if (notes) {
+          notes = JSON.parse(notes);
+        } else {
+          notes = [];
+        }
+        notes.push(note);
+        localStorage.setItem('notes', JSON.stringify(notes));
+      }
+
+      function loadNotesFromLocalStorage() {
+        const notes = localStorage.getItem('notes');
+        if (notes) {
+          const noteContainer = document.getElementById('notesContainer');
+          JSON.parse(notes).forEach(noteText => {
+            const noteBox = document.createElement('div');
+            noteBox.className = 'noteBox';
+            noteBox.textContent = noteText;
+            noteContainer.appendChild(noteBox);
+          });
+        }
+      }
+
+      window.onload = loadNotesFromLocalStorage;
+    </script>
+    <style>
+      .noteBox {
+        background-color: #f0f0f0;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topMenu">
+      <ul>
+        <li><a href="index.html">FORSIDEN</a></li>
+        <li><a href="contact.html">KONTAKT</a></li>
+        <li><a href="notes.html">NOTATER</a></li>
+      </ul>
+    </header>
+    <div class="container">
+      <main>
+        <h4>Notater</h4>
+        <p>Her kan du skrive notater som lagres lokalt i nettleseren din. Notatene vil være lagret på tross av oppfriskning av siden.</p>
+        <p>NB! Notatene vil kun være mulig å se i denne nettleseren på denne maskinen.</p>
+        <input type="text" id="noteInput" placeholder="Skriv dine notater her..." />
+        <button onclick="addNote()">Legg til notat</button>
+        <div id="notesContainer"></div>
+      </main>
+    </div>
+  </body>
+</html>
