@@ -22,16 +22,48 @@ section {
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
+}
+
+.topMenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.topMenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.topMenu ul li {
+    display: inline;
+}
+
+.topMenu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 10px;
     max-width: 60%;
     width: 100%;
+    margin-top: 60px; /* Add margin to account for the fixed top menu */
 }
 
 .leftMenu, .rightMenu {
