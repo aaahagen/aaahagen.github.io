@@ -1,0 +1,32 @@
+h1 {
+    color: #f6f1f1;
+    background-color: black;
+    width: 60%;
+    min-width: 300px;
+    padding: 4px;
+    margin-bottom: 20px;
+    grid-column: span 2;
+    border-radius: 10px; /* runde kanter på bakgrunn */
+    text-align: center;
+
+section {
+    display: flexbox;
+    border: 2px solid;
+    min-width: 300px;
+    width: 100%;
+    background-color: #096b0ec3;
+    color: #fff3bfe9;
+    border-radius: 10px; /* runde kanter på boks */
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: start;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+
+}
