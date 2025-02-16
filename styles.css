@@ -43,11 +43,26 @@ body {
 }
 
 .firstAid {
-    background-color: red; /* Changed background color to red */
+    background-color: red; 
 }
 
-.firstAid h3 {
-    text-align: center; /* Center the <h3> in the top left box */
+.loadSafety {
+    background-color: rgb(34, 136, 50); 
+}
+
+.dayPlanning {
+    background-color: rgb(0, 0, 255); 
+}
+
+.brakeSystem {
+    background-color: rgb(97, 78, 17); 
+}
+
+.firstAid h3,
+.loadSafety h3,
+.dayPlanning h3,
+.brakeSystem h3 {
+    text-align: center; 
 }
 
 @media (max-width: 300px) {
