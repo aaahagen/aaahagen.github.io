@@ -6,11 +6,23 @@ h1 {
     padding: 4px;
     margin-bottom: 20px;
     grid-column: span 2;
-    border-radius: 10px 0; /* runde kanter på bakgrunn */
+    border-radius: 10px 10px 0 0; /* runde kanter på bakgrunn */
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+h4 {
+    color: #ffffff;
+    background-color: #000000;
+    width: 60%;
+    min-width: 300px;
+    padding: 4px;
+    margin-bottom: 20px;
+    grid-column: span 2;
+    border-radius: 10px 10px 0 0; /* runde kanter på bakgrunn */
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 section {
     display: flexbox;
     border: 2px solid;
@@ -18,7 +30,7 @@ section {
     width: 100%;
     background-color: #096b0ec3;
     color: #fff3bfe9;
-    border-radius: 10px; /* runde kanter på boks */
+    border-radius: 10px 10px 0 0; 
 }
 
 body {
@@ -34,7 +46,7 @@ body {
     width: 100%;
     background-color: #f0f0f0;
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px #0000001a;
     z-index: 1000;
 }
 
@@ -44,7 +56,7 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .topMenu ul li {
@@ -94,7 +106,7 @@ main {
 .topWhitebox {
     background-color: #d3d3d3; /* Changed background color to light gray */
     padding: 0; 
-    border-radius: 10px;
+    border-radius: 20px;
     grid-column: span 2;
     width: 100%;
     text-align: left; /* Align text to the left */
@@ -122,27 +134,32 @@ main {
 }
 
 .firstAid {
-    background-color: red; 
-    grid-column: span 1; /* Span one column */
+    background-color: #ff0000; 
+    grid-column: span 1; 
+}
+
+.tachograph {
+    background-color: #bf00ff; 
+    grid-column: span 1; 
 }
 
 .loadSafety {
-    background-color: rgb(34, 136, 50); 
+    background-color: #228832; 
     grid-column: span 1; /* Span one column */
 }
 
 .dayPlanning {
-    background-color: rgb(0, 0, 255); 
+    background-color: #0000ff; 
     grid-column: span 1; /* Span one column */
 }
 
 .brakeSystem {
-    background-color: rgb(97, 78, 17); 
+    background-color: #614e11; 
     grid-column: span 1; /* Span one column */
 }
 
 .tips {
-    background-color: white; /* Changed background color to white */
+    background-color: #ffffff; /* Changed background color to white */
     grid-column: span 1; /* Span one column */
     font-size: 12px; /* Smaller font size */
     color: black; /* Changed font color to black */
@@ -157,7 +174,8 @@ main {
 .firstAid h3,
 .loadSafety h3,
 .dayPlanning h3,
-.brakeSystem h3 {
+.brakeSystem h3, 
+.tachograph h3 {
     text-align: center; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
