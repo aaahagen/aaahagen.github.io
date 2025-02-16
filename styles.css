@@ -26,6 +26,8 @@ body {
     gap: 10px;
     align-items: start;
     padding: 10px;
+    justify-content: center; /* Center the content horizontally */
+    justify-items: center; /* Center the items within the grid cells */
 }
 
 @media (max-width: 600px) {
