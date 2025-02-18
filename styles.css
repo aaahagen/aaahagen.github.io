@@ -77,9 +77,17 @@ body {
 
 .topMenu ul li a {
     text-decoration: none;
-    color: #333;
+    color: #333; /* Dark grey as standard */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
+}
+
+.topMenu ul li a:hover {
+    color: #000; /* Black on hover */
+}
+
+.topMenu ul li a:visited {
+    color: #d3d3d3; /* Light grey when visited */
 }
 
 .container {
