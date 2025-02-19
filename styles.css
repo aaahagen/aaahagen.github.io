@@ -53,11 +53,14 @@ body {
 }
 
 a {
-    color: #202020; /* Dark grey before visited */
-  }
-  a:visited {
-    color: #8d8d8d; /* Light grey when visited */
-  }
+    color: #343434; 
+     
+}
+      
+a:visited {
+    color: #343434;
+     
+}
 
 .topMenu {
     position: fixed;
@@ -84,17 +87,17 @@ a {
 
 .topMenu ul li a {
     text-decoration: none;
-    color: #333; /* Dark grey as standard */
+    color: #343434; /* Dark grey as standard */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
 }
 
 .topMenu ul li a:hover {
-    color: #000; /* Black on hover */
+    color: #000000; /* Black on hover */
 }
 
 .topMenu ul li a:visited {
-    color: #d3d3d3; /* Light grey when visited */
+    color: #343434; /* Light grey when visited */
 }
 
 .container {
