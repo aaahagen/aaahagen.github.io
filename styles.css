@@ -87,7 +87,7 @@ a:visited {
 
 .topMenu ul li a {
     text-decoration: none;
-    color: #343434; /* Dark grey as standard */
+    color: #343434; 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
 }
@@ -135,34 +135,34 @@ main {
 }
 
 .topWhitebox {
-    background-color: #d3d3d3; /* Changed background color to light gray */
+    background-color: #d3d3d3; 
     padding: 10px 15px 0 0;
     margin: 0; 
     border-radius: 20px;
     grid-column: span 2;
     width: 90%;
-    text-align: left; /* Align text to the left */
-    grid-column: span 2; /* Span across both columns */
-    color: #333; /* Changed text color to grey */
-    border: none; /* Removed border */
-    font-family: Arial, sans-serif; /* Changed font family */
-    font-size: 14px; /* Changed font size */
+    text-align: left; 
+    grid-column: span 2; 
+    color: #333; 
+    border: none; 
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
 }
 
 .topWhitebox ol {
-    margin-left: 10px; /* Reduced left margin to the ordered list */
-    padding-left: 20px; /* Add padding to the left */
+    margin-left: 10px; 
+    padding-left: 20px; 
 }
 
 .topWhitebox ol li {
-    margin-bottom: 10px; /* Add margin to the bottom of each list item */
-    padding: 5px 0; /* Add padding to the top and bottom of each list item */
-    list-style-type: disc; /* Use custom bullet points */
+    margin-bottom: 10px; 
+    padding: 5px 0; 
+    list-style-type: disc; 
 }
 
 .topWhitebox ol li:hover {
-    background-color: #f0f0f0; /* Add hover effect */
-    border-radius: 5px; /* Add border radius to the hover effect */
+    background-color: #f0f0f0; 
+    border-radius: 5px; 
 }
 
 .firstAid {
@@ -170,24 +170,49 @@ main {
     grid-column: span 1; 
 }
 
+.firstAid ul li:hover {
+    background-color: #ff4747; 
+    border-radius: 5px; 
+}
+
 .tachograph {
     background-color: #bf00ff; 
     grid-column: span 1; 
 }
 
+.tachograph ul li:hover {
+    background-color: #d042ff; 
+    border-radius: 5px;
+}
+
 .loadSafety {
     background-color: #228832; 
-    grid-column: span 1; /* Span one column */
+    grid-column: span 1; 
+}
+
+.loadSafety ul li:hover {
+    background-color: #5e9a67; 
+    border-radius: 5px;
 }
 
 .dayPlanning {
     background-color: #0000ff; 
-    grid-column: span 1; /* Span one column */
+    grid-column: span 1; 
+}
+
+.dayPlanning ul li:hover {
+    background-color: #3737ff; 
+    border-radius: 5px;
 }
 
 .brakeSystem {
     background-color: #614e11; 
-    grid-column: span 1; /* Span one column */
+    grid-column: span 1; 
+}
+
+.brakeSystem ul li:hover {
+    background-color: #89794c; 
+    border-radius: 5px;
 }
 
 .tips {
