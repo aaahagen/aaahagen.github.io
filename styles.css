@@ -6,7 +6,7 @@ h1 {
     padding: 4px;
     margin-bottom: 20px;
     grid-column: span 2;
-    border-radius: 10px 10px 0 0; /* runde kanter på bakgrunn */
+    border-radius: 10px 10px 0 0;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -19,10 +19,11 @@ h2 {
     padding: 4px;
     margin-bottom: 5px;
     grid-column: span 2;
-    border-radius: 10px 10px 0 0; 
+    border-radius: 10px 10px 0 0;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 h4 {
     color: #ffffff;
     background-color: #000000;
@@ -31,10 +32,11 @@ h4 {
     padding: 4px;
     margin-bottom: 20px;
     grid-column: span 2;
-    border-radius: 10px 10px 0 0; /* runde kanter på bakgrunn */
+    border-radius: 10px 10px 0 0;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 section {
     display: flexbox;
     border: 2px solid;
@@ -42,7 +44,7 @@ section {
     width: 73%;
     background-color: #096b0ec3;
     color: #fff3bfe9;
-    border-radius: 10px 10px 0 0; 
+    border-radius: 10px 10px 0 0;
 }
 
 body {
@@ -53,13 +55,11 @@ body {
 }
 
 a {
-    color: #343434; 
-     
+    color: #343434; /* Dark grey before visited */
 }
-      
+
 a:visited {
-    color: #343434;
-     
+    color: #d3d3d3; /* Light grey when visited */
 }
 
 .topMenu {
@@ -87,7 +87,7 @@ a:visited {
 
 .topMenu ul li a {
     text-decoration: none;
-    color: #343434; 
+    color: #343434; /* Dark grey as standard */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
 }
@@ -97,7 +97,7 @@ a:visited {
 }
 
 .topMenu ul li a:visited {
-    color: #343434; /* Light grey when visited */
+    color: #d3d3d3; /* Light grey when visited */
 }
 
 .container {
@@ -116,16 +116,16 @@ a:visited {
     border-radius: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    width: 100%;  
+    width: 100%;
 }
 
 .rightMenu {
-    padding-top: 5rlh; 
+    padding-top: 5rlh;
 }
 
 .leftMenu ul, .rightMenu ul {
-    list-style-type: none; 
-    padding: 0; 
+    list-style-type: none;
+    padding: 0;
 }
 
 main {
@@ -135,105 +135,104 @@ main {
 }
 
 .topWhitebox {
-    background-color: #d3d3d3; 
+    background-color: #d3d3d3;
     padding: 10px 15px 0 0;
-    margin: 0; 
+    margin: 0;
     border-radius: 20px;
     grid-column: span 2;
     width: 90%;
-    text-align: left; 
-    grid-column: span 2; 
-    color: #333; 
-    border: none; 
-    font-family: Arial, sans-serif; 
-    font-size: 14px; 
+    text-align: left;
+    color: #333;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
 }
 
 .topWhitebox ol {
-    margin-left: 10px; 
-    padding-left: 20px; 
+    margin-left: 10px;
+    padding-left: 20px;
 }
 
 .topWhitebox ol li {
-    margin-bottom: 10px; 
-    padding: 5px 0; 
-    list-style-type: disc; 
+    margin-bottom: 10px;
+    padding: 5px 0;
+    list-style-type: disc;
 }
 
 .topWhitebox ol li:hover {
-    background-color: #f0f0f0; 
-    border-radius: 5px; 
+    background-color: #f0f0f0;
+    border-radius: 5px;
 }
 
 .firstAid {
-    background-color: #ff0000; 
-    grid-column: span 1; 
+    background-color: #ff0000;
+    grid-column: span 1;
 }
 
 .firstAid ul li:hover {
-    background-color: #ff4747; 
-    border-radius: 5px; 
+    background-color: #ff4747;
+    border-radius: 5px;
 }
 
 .tachograph {
-    background-color: #bf00ff; 
-    grid-column: span 1; 
+    background-color: #bf00ff;
+    grid-column: span 1;
 }
 
 .tachograph ul li:hover {
-    background-color: #d042ff; 
+    background-color: #d042ff;
     border-radius: 5px;
 }
 
 .loadSafety {
-    background-color: #228832; 
-    grid-column: span 1; 
+    background-color: #228832;
+    grid-column: span 1;
 }
 
 .loadSafety ul li:hover {
-    background-color: #5e9a67; 
+    background-color: #5e9a67;
     border-radius: 5px;
 }
 
 .dayPlanning {
-    background-color: #0000ff; 
-    grid-column: span 1; 
+    background-color: #0000ff;
+    grid-column: span 1;
 }
 
 .dayPlanning ul li:hover {
-    background-color: #3737ff; 
+    background-color: #3737ff;
     border-radius: 5px;
 }
 
 .brakeSystem {
-    background-color: #614e11; 
-    grid-column: span 1; 
+    background-color: #614e11;
+    grid-column: span 1;
 }
 
 .brakeSystem ul li:hover {
-    background-color: #89794c; 
+    background-color: #89794c;
     border-radius: 5px;
 }
 
 .tips {
-    background-color: #ffffff; /* Changed background color to white */
-    grid-column: span 1; /* Span one column */
-    font-size: 12px; /* Smaller font size */
-    color: black; /* Changed font color to black */
-    border: none; /* Removed border */
+    background-color: #ffffff;
+    grid-column: span 1;
+    font-size: 12px;
+    color: black;
+    border: none;
 }
 
 .tips ul {
-    list-style-type: none; /* Remove bullets */
-    padding-left: 0; /* Remove padding */
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .firstAid h3,
 .loadSafety h3,
 .dayPlanning h3,
-.brakeSystem h3, 
+.brakeSystem h3,
 .tachograph h3 {
-    text-align: center; 
+    text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
