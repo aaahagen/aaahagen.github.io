@@ -43,7 +43,7 @@ section {
     min-width: 300px;
     width: 73%;
     background-color: #096b0ec3;
-    color: #fff3bfe9;
+    color: #fff1da;
     border-radius: 10px 10px 0 0;
 }
 
@@ -55,11 +55,11 @@ body {
 }
 
 a {
-    color: #343434; /* Dark grey before visited */
+    color: #000000; 
 }
 
 a:visited {
-    color: #d3d3d3; /* Light grey when visited */
+    color: #2c2c2c; 
 }
 
 .topMenu {
@@ -97,7 +97,7 @@ a:visited {
 }
 
 .topMenu ul li a:visited {
-    color: #d3d3d3; /* Light grey when visited */
+    color: #343434; /* Light grey when visited */
 }
 
 .container {
