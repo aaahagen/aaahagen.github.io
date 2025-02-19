@@ -52,6 +52,13 @@ body {
     padding: 10px;
 }
 
+a {
+    color: #202020; /* Dark grey before visited */
+  }
+  a:visited {
+    color: #8d8d8d; /* Light grey when visited */
+  }
+
 .topMenu {
     position: fixed;
     top: 0;
