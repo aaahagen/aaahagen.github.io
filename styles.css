@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 h1 {
     color: #ffffff;
     background-color: #000000;
