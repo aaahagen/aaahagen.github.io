@@ -218,6 +218,10 @@ main {
     gap: 10px;
 }
 
+.firstAid, .tachograph, .loadSafety, .dayPlanning, .brakeSystem, .tipsBox {
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
 .topWhitebox {
     background-color: #d3d3d3;
     padding: 10px 15px 0 0;
