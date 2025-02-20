@@ -220,7 +220,7 @@ main {
     gap: 10px;
 }
 
-.tipsBox, .tips, .topWhitebox {
+.tipsBox, .tips, .topWhitebox, .resources {
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
@@ -254,7 +254,7 @@ main {
     border-radius: 5px;
 }
 
-.tipsBox {
+.tipsBox, .resources {
     background-color: #fffddc;
     padding: 10px;
     margin: 0;
