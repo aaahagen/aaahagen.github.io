@@ -220,7 +220,7 @@ main {
     gap: 10px;
 }
 
-.firstAid, .tachograph, .loadSafety, .dayPlanning, .brakeSystem, .tipsBox, .tips, .topWhitebox {
+.tipsBox, .tips, .topWhitebox {
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
