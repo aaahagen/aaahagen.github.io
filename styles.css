@@ -52,7 +52,7 @@ h7 {
 
 section {
     display: flexbox;
-    border: 2px solid;
+    border: 0;
     min-width: 300px;
     width: 73%;
     color: #fff9eb;
@@ -192,7 +192,8 @@ a:visited {
     margin: 0 20px;
     max-width: 100%;
     width: 100%;
-    margin-top: 60px; 
+    margin-top: 60px;
+    border: 0; 
 }
 
 .leftMenu, .rightMenu {
@@ -218,8 +219,8 @@ main {
     gap: 10px;
 }
 
-.firstAid, .tachograph, .loadSafety, .dayPlanning, .brakeSystem, .tipsBox {
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+.firstAid, .tachograph, .loadSafety, .dayPlanning, .brakeSystem, .tipsBox, .tips {
+    box-shadow: 5px 6px 3px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
 .topWhitebox {
