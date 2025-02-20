@@ -262,8 +262,21 @@ main {
     padding: 5px;
     margin: 0 5px;
 }
-.tipsBox, .resources {
+
+.tipsBox {
     background-color: #fffddc;
+    padding: 10px;
+    margin: 0;
+    width: 90%;
+    text-align: left;
+    color: #333;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.resources {
+    background-color: #fffeea;
     padding: 10px;
     margin: 0;
     width: 90%;
