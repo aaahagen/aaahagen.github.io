@@ -11,9 +11,7 @@
     <body>
         <header class="topMenu">
             <ul>
-                <li><a href="index.html">FORSIDEN</a></li>
-                
-                <li><a href="notes.html">NOTATER</a></li>
+                <li><a href="index.html">TOPPEN</a></li>
             </ul>
         </header>
         <div class="container">
@@ -243,7 +241,58 @@
                 Du må ha egen PC for å gjennomføre eksamen. 
                 </p>
                </section>
-                    </aside>
+               <section>
+               <script>
+                function addNote() {
+                  const noteText = document.getElementById('noteInput').value;
+                  if (noteText.trim() !== '') {
+                    const noteContainer = document.getElementById('notesContainer');
+                    const noteBox = document.createElement('div');
+                    noteBox.className = 'noteBox';
+                    noteBox.textContent = noteText;
+                    noteContainer.appendChild(noteBox);
+                    saveNoteToLocalStorage(noteText);
+                    document.getElementById('noteInput').value = '';
+                  }
+                }
+          
+                function saveNoteToLocalStorage(note) {
+                  let notes = localStorage.getItem('notes');
+                  if (notes) {
+                    notes = JSON.parse(notes);
+                  } else {
+                    notes = [];
+                  }
+                  notes.push(note);
+                  localStorage.setItem('notes', JSON.stringify(notes));
+                }
+          
+                function loadNotesFromLocalStorage() {
+                  const notes = localStorage.getItem('notes');
+                  if (notes) {
+                    const noteContainer = document.getElementById('notesContainer');
+                    JSON.parse(notes).forEach(noteText => {
+                      const noteBox = document.createElement('div');
+                      noteBox.className = 'noteBox';
+                      noteBox.textContent = noteText;
+                      noteContainer.appendChild(noteBox);
+                    });
+                  }
+                }
+          
+                window.onload = loadNotesFromLocalStorage;
+              </script>
+                <h4>Notater</h4>
+                <section class="tipsBox">
+                <p>Skriv notater som lagres lokalt i nettleseren din. 
+                <br>Notatene vil være lagret på tross av oppfriskning av siden.<br>
+                NB! <em>Notatene vil kun være mulig å se i denne nettleseren, på denne maskinen.</em></p>
+                <input type="text" id="noteInput" class="noteInput" placeholder="Skriv dine notater her..." />
+                <br><br><button onclick="addNote()">Legg til notat</button>
+                <div id="notesContainer"></div>
+                </section>
+        
+            </aside>
         </div>
     </body>
     <footer>februar 2025</footer>
