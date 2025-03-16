@@ -135,6 +135,18 @@ a:visited {
     color: #ffcece; 
 }
 
+.loadSafety a{
+    color: #deffce; 
+}
+
+.loadSafety a:hover {
+    color: #fafff8; 
+}
+
+.loadSafety a:visited {
+    color: #deffce; 
+}
+
 .dayPlanning a{
     color: #c3cdff;
 }
@@ -263,6 +275,15 @@ main {
     margin: 0 5px;
 }
 
+.collapsibleCard {
+    text-decoration: none;
+    color: #feeece; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 17px;
+    padding: 5px;
+    margin: 0 5px;
+}
+
 .tipsBox {
     background-color: #fffddc;
     padding: 10px;
@@ -290,7 +311,10 @@ main {
 .firstAid {
     background-color: #ff0000;
     grid-column: span 1;
+    color: #fffcee;
     padding: 0 15px 0 0;
+    border-radius: 0 5px 5px 0;
+    width: 85%;
 }
 
 .firstAid ul li:hover {
@@ -301,7 +325,10 @@ main {
 .tachograph {
     background-color: #bf00ff;
     grid-column: span 1;
+    color: #fffcee;
     padding: 0 15px 0 0;
+    border-radius: 0 5px 5px 0;
+    width: 85%;
 }
 
 .tachograph ul li:hover {
@@ -312,7 +339,10 @@ main {
 .loadSafety {
     background-color: #228832;
     grid-column: span 1;
+    color: #fffcee;
     padding: 0 15px 0 0;
+    border-radius: 0 5px 5px 0;
+    width: 85%;
 }
 
 .loadSafety ul li:hover {
@@ -323,7 +353,10 @@ main {
 .dayPlanning {
     background-color: #0000ff;
     grid-column: span 1;
+    color: #fffcee;
     padding: 0 15px 0 0;
+    border-radius: 0 5px 5px 0;
+    width: 85%;
 }
 
 .dayPlanning ul li:hover {
@@ -334,7 +367,11 @@ main {
 .brakeSystem {
     background-color: #614e11;
     grid-column: span 1;
+    color: #fffcee;
     padding: 0 15px 0 0;
+    border-radius: 0 5px 5px 0;
+    width: 85%;
+
 }
 
 .brakeSystem ul li:hover {
