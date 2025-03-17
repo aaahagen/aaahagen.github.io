@@ -162,9 +162,9 @@
                     </ul>
                 </details>
                 <br>
+                <h4>Ressurser</h4>
         <details class="resources">
-            <summary class="collapsibleResource">Ressurser</summary>
-            <h5>Lovdata</h5>
+            <summary class="collapsibleCardResources">Lovdata</summary>
             <ul>
                 <li><a href="http://eksamen.lovdata.no/">http://eksamen.lovdata.no</a></li>
             </ul>
@@ -267,7 +267,57 @@
             </ul>
           </summmary>
         </details>
-            <br>
+            <section>
+                <script>
+                 function addNote() {
+                   const noteText = document.getElementById('noteInput').value;
+                   if (noteText.trim() !== '') {
+                     const noteContainer = document.getElementById('notesContainer');
+                     const noteBox = document.createElement('div');
+                     noteBox.className = 'noteBox';
+                     noteBox.textContent = noteText;
+                     noteContainer.appendChild(noteBox);
+                     saveNoteToLocalStorage(noteText);
+                     document.getElementById('noteInput').value = '';
+                   }
+                 }
+           
+                 function saveNoteToLocalStorage(note) {
+                   let notes = localStorage.getItem('notes');
+                   if (notes) {
+                     notes = JSON.parse(notes);
+                   } else {
+                     notes = [];
+                   }
+                   notes.push(note);
+                   localStorage.setItem('notes', JSON.stringify(notes));
+                 }
+           
+                 function loadNotesFromLocalStorage() {
+                   const notes = localStorage.getItem('notes');
+                   if (notes) {
+                     const noteContainer = document.getElementById('notesContainer');
+                     JSON.parse(notes).forEach(noteText => {
+                       const noteBox = document.createElement('div');
+                       noteBox.className = 'noteBox';
+                       noteBox.textContent = noteText;
+                       noteContainer.appendChild(noteBox);
+                     });
+                   }
+                 }
+           
+                 window.onload = loadNotesFromLocalStorage;
+               </script>
+                 <h4>Notater</h4>
+                 <section class="tipsBox">
+                 <p>Skriv notater som lagres lokalt i nettleseren din. 
+                 <br>Notatene vil være lagret på tross av oppfriskning av siden.
+                 <br>Slett nettlesningsdata for å fjerne notatene.<br>
+                 NB! <em>Notatene vil kun være mulig å se i denne nettleseren, på denne maskinen.</em></p>
+                 <input type="text" id="noteInput" class="noteInput" placeholder="Skriv dine notater her..." />
+                 <br><br><button onclick="addNote()">Legg til notat</button>&#8628;
+                 <br><br><div id="notesContainer" class="notesContainer"></div>
+                 </section>
         </main> 
         <aside class="rightMenu">
             <h4>Tips</h4>
@@ -302,58 +352,6 @@
                 </p>
                </section>
             </section>
-               <section>
-               <script>
-                function addNote() {
-                  const noteText = document.getElementById('noteInput').value;
-                  if (noteText.trim() !== '') {
-                    const noteContainer = document.getElementById('notesContainer');
-                    const noteBox = document.createElement('div');
-                    noteBox.className = 'noteBox';
-                    noteBox.textContent = noteText;
-                    noteContainer.appendChild(noteBox);
-                    saveNoteToLocalStorage(noteText);
-                    document.getElementById('noteInput').value = '';
-                  }
-                }
-          
-                function saveNoteToLocalStorage(note) {
-                  let notes = localStorage.getItem('notes');
-                  if (notes) {
-                    notes = JSON.parse(notes);
-                  } else {
-                    notes = [];
-                  }
-                  notes.push(note);
-                  localStorage.setItem('notes', JSON.stringify(notes));
-                }
-          
-                function loadNotesFromLocalStorage() {
-                  const notes = localStorage.getItem('notes');
-                  if (notes) {
-                    const noteContainer = document.getElementById('notesContainer');
-                    JSON.parse(notes).forEach(noteText => {
-                      const noteBox = document.createElement('div');
-                      noteBox.className = 'noteBox';
-                      noteBox.textContent = noteText;
-                      noteContainer.appendChild(noteBox);
-                    });
-                  }
-                }
-          
-                window.onload = loadNotesFromLocalStorage;
-              </script>
-                <h4>Notater</h4>
-                <section class="tipsBox">
-                <p>Skriv notater som lagres lokalt i nettleseren din. 
-                <br>Notatene vil være lagret på tross av oppfriskning av siden.
-                <br>Slett nettlesningsdata for å fjerne notatene.<br>
-                NB! <em>Notatene vil kun være mulig å se i denne nettleseren, på denne maskinen.</em></p>
-                <input type="text" id="noteInput" class="noteInput" placeholder="Skriv dine notater her..." />
-                <br><br><button onclick="addNote()">Legg til notat</button>&#8628;
-                <br><br><div id="notesContainer" class="notesContainer"></div>
-                </section>
-        
             </aside>
         </div>
     </body>
