@@ -364,6 +364,21 @@ main {
     border-radius: 5px;
 }
 
+.adr {
+    background-color: #ff9a1e;
+    grid-column: span 1;
+    color: #fffcee;
+    padding: 0 15px 0 0;
+    border-radius: 0 5px 5px 0;
+    width: 85%;
+    min-width: 290px;
+}
+
+.adr ul li:hover {
+    background-color: #ffb964;
+    border-radius: 5px;
+}
+
 .resources {
     background-color: #fff9eb;
     padding: 5px 15px 5px 0;
