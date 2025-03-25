@@ -141,6 +141,18 @@ a:visited {
     color: #c3cdff;
 }
 
+.adr a {
+    color: #ffd8a9;
+}
+
+.adr a:hover {
+    color: #fcfcfc;
+}
+
+.adr a:visited {
+    color: #ffd8a9;
+}
+
 .topMenu {
     position: fixed;
     top: 0;
@@ -271,7 +283,7 @@ main {
     text-decoration: none;
     color: #000000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     padding: 5px;
     margin: 0 5px;
 }
