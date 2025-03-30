@@ -141,6 +141,18 @@ a:visited {
     color: #c3cdff;
 }
 
+.brakeSystem a {
+    color: #b1a890;
+}
+
+.brakeSystem a:hover {
+    color: #fcfcfc;
+}
+
+.brakeSystem a:visited {
+    color: #b1a890;
+}
+
 .adr a {
     color: #ffd8a9;
 }
