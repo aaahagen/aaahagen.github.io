@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Kjøretøykontroll</title>
+</head>
+<body>
+  <h1>Daglig kjøretøykontroll</h1>
+
+  <form id="controlForm">
+    <label for="driverName">Sjåførnavn:</label>
+    <input type="text" id="driverName" required><br><br>
+
+    <label for="vehicleId">Kjøretøy-ID:</label>
+    <input type="text" id="vehicleId" required><br><br>
+
+    <label for="comment">Generell kommentar:</label><br>
+    <textarea id="comment"></textarea><br><br>
+
+    <button type="submit">Fullfør kontroll</button>
+  </form>
+
+  <script type="module" src="vehiclecmain.js"></script>
+</body>
+</html>
