@@ -32,10 +32,13 @@ document.getElementById("controlForm").addEventListener("submit", async (e) => {
   };
 
   try {
-    const docRef = await addDoc(collection(db, "inspections"), data);
+    const docRef = await addDoc(collection(db, "inspections"), inspectionData);
+    console.log("Kontroll lagret!");
+    console.log("Dokument-ID:", docRef.id);
     alert("Kontroll lagret med ID: " + docRef.id);
   } catch (error) {
-    alert("Feil ved lagring: " + error.message);
+    console.error("Feil ved lagring til Firestore:", error);
+    alert("Kunne ikke lagre kontroll. Sjekk konsollen for detaljer.");
   }
 });
 // Import the functions you need from the SDKs you need
