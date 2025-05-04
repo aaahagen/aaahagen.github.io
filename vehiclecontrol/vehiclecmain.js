@@ -1,19 +1,4 @@
-// Firebase config – erstatt med dine egne verdier fra Firebase Console
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js";
 
-const firebaseConfig = {
-  apiKey: "DIN_API_KEY",
-  authDomain: "vehicle-control-aaah.firebaseapp.com",
-  projectId: "vehicle-control-aaah",
-  storageBucket: "vehicle-control-aaah.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "APP_ID_HER"
-};
-
-// Initialiser Firebase
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
 
 // Skjema-håndtering
 document.getElementById("controlForm").addEventListener("submit", async (e) => {
