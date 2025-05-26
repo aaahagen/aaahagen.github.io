@@ -94,15 +94,14 @@ function displayStories(filteredStories) {
                     <div class="p-5 flex flex-col flex-grow">
                         <h3 class="text-2xl font-semibold text-indigo-600 mb-2">${story.title}</h3>
                         <p class="text-gray-700 text-sm leading-relaxed story-content-scrollable flex-grow mb-3">${story.teaser}</p>
-                        <div class="mt-auto"> {/* Sørger for at knappen og info er nederst */}
-                            <a href="historier/${story.htmlFilename}" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-150 ease-in-out mb-3 w-full text-center">
-                                Les mer
-                            </a>
-                            <div class="pt-3 border-t border-gray-200">
-                                <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Alder: ${story.age} år</span>
-                                <span class="inline-block bg-pink-100 text-pink-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">Kjønn: ${story.gender}</span>
-                            </div>
+                        <div class="mt-auto">
+                        <!-- Sørger for at knappen og info er nederst -->
+                        <a href="historier/${story.htmlFilename}" class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-150 ease-in-out mb-3 w-full text-center">Les mer</a>
+                    <div class="pt-3 border-t border-gray-200">
+                        <span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Alder: ${story.age} år</span>
+                        <span class="inline-block bg-pink-100 text-pink-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">Kjønn: ${story.gender}</span>
                         </div>
+                    </div>
                     </div>
                 </div>
             `;
