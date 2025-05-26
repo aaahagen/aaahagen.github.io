@@ -1,0 +1,90 @@
+/* Importerer Tailwind base, components, and utilities */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom scrollbar for story content if needed */
+.story-content-scrollable {
+    max-height: 100px; /* Juster for teaser-lengde */
+    overflow-y: auto;
+    /* Forbedret scrollbar-utseende (valgfritt, nettleseravhengig) */
+    scrollbar-width: thin;
+    scrollbar-color: #a5b4fc #e0e7ff; /* thumb track for Firefox */
+}
+
+/* For Webkit-baserte nettlesere (Chrome, Safari, Edge) */
+.story-content-scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+
+.story-content-scrollable::-webkit-scrollbar-track {
+    background: #e0e7ff; /* Farge på sporet */
+    border-radius: 10px;
+}
+
+.story-content-scrollable::-webkit-scrollbar-thumb {
+    background-color: #a5b4fc; /* Farge på "tommelen" */
+    border-radius: 10px;
+    border: 2px solid #e0e7ff; /* Legger til litt padding rundt tommelen */
+}
+
+/* Basic styling for Inter font */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sørger for at bilder ikke ødelegger layout hvis de er for store */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Fjerner ekstra plass under bilder */
+}
+
+/* Styling for individuelle historiesider */
+.story-page-container {
+    max-width: 800px; /* Begrenser bredden for lesbarhet */
+    margin: 2rem auto; /* Sentrerer og gir litt luft */
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Litt gjennomsiktig hvit */
+    backdrop-filter: blur(10px); /* Bakgrunnsblur */
+    border-radius: 12px; /* Avrundede hjørner */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Myk skygge */
+}
+
+.story-page-container h1 {
+    font-size: 2.5rem; /* Stor tittel */
+    color: #4f46e5; /* Indigo farge */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.story-page-container img.story-image-full {
+    width: 100%;
+    max-height: 400px; /* Begrenser høyden på bildet */
+    object-fit: cover; /* Sørger for at bildet dekker uten å forvrenge */
+    border-radius: 8px; /* Avrundede hjørner for bildet */
+    margin-bottom: 1.5rem;
+}
+
+.story-page-container .story-full-content {
+    font-size: 1.1rem; /* God lesbar størrelse */
+    line-height: 1.8; /* God linjeavstand */
+    color: #374151; /* Mørk grå tekst */
+    white-space: pre-line; /* Bevarer linjeskift fra JavaScript-strengen */
+}
+
+.story-page-container .back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #6366f1; /* Indigo */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.story-page-container .back-link:hover {
+    background-color: #4f46e5; /* Mørkere indigo ved hover */
+}
+
